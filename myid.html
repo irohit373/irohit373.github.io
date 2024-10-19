@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="myidcss.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="my1.jpeg" alt="myimage" srcset="">
+            </div>
+            <div class="user-name"><h2>Rohit Deshmukh</h2></div>
+            <div class="designation"><h3>Being on the Pace</h3></div>
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card" >
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share my Porfile</div>
+                </button>
+
+                <button class="btn-follow btn-card" >Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Popup Model -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+            </div>
+        </div>
+
+        <div>
+
+            <h3>Shre this via</h3>
+
+            <div class="icon-container">
+                <a href="" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="myidjs.js"></script>
+</body>
+</html>
